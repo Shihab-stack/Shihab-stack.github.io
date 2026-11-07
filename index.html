@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sheikh Shihab Uddin | AI Engineering</title>
+  <meta name="description" content="Sheikh Shihab Uddin, CSE student at BRAC University building LLM agents with tool calling, MCP, and sandboxed execution.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <a class="brand" href="#">Shihab</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="eyebrow">AI Engineering Internship Candidate</p>
+      <h1>Sheikh Shihab Uddin</h1>
+      <p class="lead">I build LLM agents that use tools safely: multi-provider fallback, MCP integrations, sandboxed code execution, and human approval for risky actions.</p>
+      <div class="buttons">
+        <a class="btn primary" href="resume.pdf">Download Resume</a>
+        <a class="btn" href="https://github.com/Shihab-stack">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/sheikh-shihab-uddin-79957640b/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a Computer Science &amp; Engineering student at BRAC University (expected 2028), based in Dhaka. I built a multi-provider LLM agent harness with MCP tool integrations, a locked-down Docker code sandbox, Telegram human-approval gates, and a streaming web interface.</p>
+      <p>I'm strong in Python and security-minded design, with embedded robotics experience and video skills for clear technical demos. I'm looking for an AI engineering internship to build reliable, secure agent systems.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Autonomous Multi-LLM Agent Harness</h3>
+          <a href="https://github.com/Shihab-stack/agent-harness-build">View on GitHub &rarr;</a>
+        </div>
+        <p class="stack">Python · TypeScript · Next.js · Docker · Ollama · MCP · Telegram Bot API</p>
+        <ul>
+          <li><strong>Multi-LLM orchestration:</strong> local-first agent with a streaming tool-calling loop, persistent session state, and automatic fallback across 5 providers (Ollama, Gemini, Groq, OpenAI, Anthropic).</li>
+          <li><strong>MCP integration:</strong> 7 MCP servers (Time, Web Fetch, Memory, GitHub, Context7, Playwright, Sequential Thinking) with schema validation and isolated error handling, so one failing server never blocks the agent.</li>
+          <li><strong>Secure code execution:</strong> Docker sandbox for LLM-generated Python with no network, read-only filesystem, 0.5 CPU / 256 MiB limits, and a 30-second timeout.</li>
+          <li><strong>Human-in-the-loop safety:</strong> Telegram approval gate with Approve/Deny buttons and a 60-second auto-timeout for any data-mutating action.</li>
+          <li><strong>Web interface:</strong> Next.js/TypeScript chat UI with live token streaming (SSE), a tool-activity log, and skill/MCP management; bearer-token auth, strict CORS origins, and mutating tools denied in web mode.</li>
+          <li><strong>Evaluation:</strong> offline evaluation and unit-test suite of 84 tests (14 CLI-specific) covering tool-selection accuracy, context retrieval efficiency, and failure recovery.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Encrypted Credential Vault &amp; Password Manager</h3>
+          <a href="https://github.com/Shihab-stack/Password-Manager">View on GitHub &rarr;</a>
+        </div>
+        <p class="stack">Python · Cryptography</p>
+        <ul>
+          <li>CLI password manager with symmetric encryption at rest, modular architecture, .env-based secret isolation, and documented secure API-key setup.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Autonomous Robotic Watercraft</h3>
+          <span class="date">Oct 2026</span>
+        </div>
+        <p class="stack">Arduino · Embedded C/C++ · Sensors</p>
+        <ul>
+          <li>Autonomous boat with waypoint navigation set remotely, plus sensor data collection, using Arduino and motor drivers.</li>
+          <li>Motor-control logic and hardware-software communication for real-time sensor processing.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Agentic AI</dt>
+        <dd>LLM Agents, Tool Use / Function Calling, MCP Integration, ReAct Loops, Multi-LLM Orchestration, Human-in-the-Loop Workflows, Agent Evaluation, Context Management</dd>
+        <dt>LLM Providers</dt>
+        <dd>OpenAI, Anthropic, Google Gemini, Groq, Ollama (local models)</dd>
+        <dt>Languages &amp; Web</dt>
+        <dd>Python (Asyncio, Pydantic, Aiohttp), TypeScript/JavaScript, React, Next.js, Tailwind CSS, Java, C/C++</dd>
+        <dt>Infrastructure &amp; Security</dt>
+        <dd>Docker, Linux/Bash, Git/GitHub, uv, Sandboxed Code Execution, Secrets &amp; Environment Management</dd>
+        <dt>Testing</dt>
+        <dd>unittest, Mocking, Offline Regression Testing, Eval Benchmarking</dd>
+        <dt>Foundations</dt>
+        <dd>Data Structures &amp; Algorithms, Probability &amp; Statistics, Linear Algebra, Calculus</dd>
+      </dl>
+    </section>
+
+    <section id="experience">
+      <h2>Experience &amp; Education</h2>
+      <div class="row">
+        <div>
+          <h3>STEM &amp; CS Tutor</h3>
+          <p>Taught 10+ SSC, HSC, and first-year university students in mathematics, physics, ICT, and computer science, turning topics like calculus and algorithm execution into structured lessons.</p>
+        </div>
+        <span class="date">Jan 2023 – Present</span>
+      </div>
+      <div class="row">
+        <div>
+          <h3>Active Member, BRAC University Robotics Club (BURO)</h3>
+          <p>Worked with hardware and software teams on embedded systems, sensor integration, and robotics prototypes.</p>
+        </div>
+        <span class="date">Oct 2026 – Present</span>
+      </div>
+      <div class="row">
+        <div>
+          <h3>B.Sc. in Computer Science and Engineering, BRAC University</h3>
+          <p>Coursework: Data Structures &amp; Algorithms, Probability &amp; Statistics, Advanced Calculus</p>
+        </div>
+        <span class="date">Expected 2028</span>
+      </div>
+    </section>
+
+    <section id="creative">
+      <h2>Creative Work</h2>
+      <p>3D motion graphics, visual storytelling, and technical video editing, used to produce demo videos and architecture walkthroughs for my agent projects. <a href="https://skportfolio007.carrd.co/">See my creative portfolio &rarr;</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Open to AI engineering internships. The best way to reach me is email.</p>
+      <ul class="contact">
+        <li><a href="mailto:sheikh.shihab.uddin@g.bracu.ac.bd">sheikh.shihab.uddin@g.bracu.ac.bd</a></li>
+        <li><a href="https://github.com/Shihab-stack">github.com/Shihab-stack</a></li>
+        <li><a href="https://www.linkedin.com/in/sheikh-shihab-uddin-79957640b/">LinkedIn</a></li>
+        <li>Dhaka, Bangladesh</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sheikh Shihab Uddin</p>
+  </footer>
+
+</body>
+</html>
